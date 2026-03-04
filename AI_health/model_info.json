@@ -1,0 +1,47 @@
+{
+    "best_params": {
+        "classifier__max_depth": 10,
+        "classifier__min_samples_leaf": 1,
+        "classifier__min_samples_split": 5,
+        "classifier__n_estimators": 100
+    },
+    "best_score": 0.6083333333333333,
+    "test_accuracy": 0.5388888888888889,
+    "categorical_features": [
+        "Gender",
+        "Race",
+        "AdmissionType",
+        "AdmissionSource",
+        "PrimaryDiagnosis",
+        "Metformin",
+        "Insulin",
+        "DiabetesMed",
+        "A1CResult",
+        "MaxGluSerum",
+        "SmokingStatus",
+        "DischargeDisposition",
+        "PayerCode",
+        "MedicalSpecialty",
+        "LOSCategory"
+    ],
+    "numerical_features": [
+        "Age",
+        "NumberOfDiagnoses",
+        "NumberOfProcedures",
+        "NumberOfMedications",
+        "PriorAdmissions",
+        "TimeInHospital",
+        "NumberOfLabProcedures",
+        "NumberOfEmergencyVisits",
+        "BMI",
+        "HasDiabetes",
+        "HasHeartDisease",
+        "HasHypertension",
+        "HasRenalDisease",
+        "ComorbidityCount"
+    ],
+    "target_classes": [
+        "No",
+        "Yes"
+    ]
+}

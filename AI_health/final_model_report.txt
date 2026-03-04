@@ -1,0 +1,39 @@
+================================================================================
+FINAL MODEL PERFORMANCE REPORT
+================================================================================
+
+DATASET INFORMATION:
+----------------------------------------
+Original data: C:\Users\akono\OneDrive\Desktop\AI_health\patient_readmission_data.csv
+Cleaned data: cleaned_patient_readmission_data.csv (1800 rows)
+Engineered data: engineered_patient_readmission_data.csv (1800 rows)
+Encoded data: encoded_patient_readmission_data.csv (65 features)
+Training set: 1440 patients
+Test set: 360 patients
+
+BEST MODEL: RandomForest_Balanced
+Best Parameters: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': 'balanced', 'criterion': 'gini', 'max_depth': 5, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': -1, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+
+PERFORMANCE METRICS:
+----------------------------------------
+Accuracy: 55.3%
+Sensitivity (Recall for Readmissions): 41.5%
+Specificity: 66.2%
+Precision: 49.3%
+AUC-ROC: 56.9%
+
+CONFUSION MATRIX:
+----------------------------------------
+[[133  68]
+ [ 93  66]]
+
+CLASSIFICATION REPORT:
+----------------------------------------
+              precision    recall  f1-score   support
+
+          No       0.59      0.66      0.62       201
+         Yes       0.49      0.42      0.45       159
+
+    accuracy                           0.55       360
+   macro avg       0.54      0.54      0.54       360
+weighted avg       0.55      0.55      0.55       360
